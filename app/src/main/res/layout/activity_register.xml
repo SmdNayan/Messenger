@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.resgister.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/app_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/et_email"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_your_email"
+        android:layout_marginHorizontal="28dp"
+        android:gravity="center"
+        android:background="@drawable/bg_et_l"
+        android:inputType="textEmailAddress"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/et_nickname"/>
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_your_nickname"
+        android:layout_marginHorizontal="28dp"
+        android:gravity="center"
+        android:background="@drawable/bg_et_l"
+        android:inputType="text"
+        android:layout_marginTop="12dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/et_email"
+        app:layout_constraintBottom_toTopOf="@id/et_password"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="28dp"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_et_l"
+        android:hint="@string/enter_your_password"
+        app:layout_constraintBottom_toTopOf="@id/et_what_i_do"
+        app:layout_constraintTop_toBottomOf="@id/et_nickname" />
+
+    <EditText
+        android:id="@+id/et_what_i_do"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="28dp"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:inputType="text"
+        android:background="@drawable/bg_et_l"
+        android:hint="@string/what_i_do"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password"/>
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="120dp"
+        android:layout_height="56dp"
+        android:text="@string/sign_up"
+        android:paddingHorizontal="12dp"
+        android:backgroundTint="@color/teal_200"
+        app:layout_constraintTop_toBottomOf="@id/et_what_i_do"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Wait ... "
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@id/spin_kit"/>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="#8BB7F0"
+            android:layout_marginTop="100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
