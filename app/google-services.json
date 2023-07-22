@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "597471667242",
-    "project_id": "messenger-app-14007",
-    "storage_bucket": "messenger-app-14007.appspot.com"
+    "project_number": "958684704354",
+    "project_id": "messenger-app-72b47",
+    "storage_bucket": "messenger-app-72b47.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:597471667242:android:cee2b9e805eebb52a88f53",
+        "mobilesdk_app_id": "1:958684704354:android:a3d1a969ca35ea0b44ab3b",
         "android_client_info": {
           "package_name": "com.alex.messenger"
         }
       },
       "oauth_client": [
         {
-          "client_id": "597471667242-vtjd1prtfihv352e2ae1inac5e66o1ss.apps.googleusercontent.com",
+          "client_id": "958684704354-jk4fqvsj0upvquqv7gh6p56bt7o9a79m.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyARWH9hi_F6pL4iB4SRRQPYmNIw6-s-5fU"
+          "current_key": "AIzaSyDmt4YjMXjU1kx2Az19KKop5sNW1i1jsdQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "597471667242-vtjd1prtfihv352e2ae1inac5e66o1ss.apps.googleusercontent.com",
+              "client_id": "958684704354-jk4fqvsj0upvquqv7gh6p56bt7o9a79m.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
